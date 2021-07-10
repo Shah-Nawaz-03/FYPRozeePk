@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppliedJobs.SetStatus">
+
+
+    <include
+        android:id="@+id/toolbar_setstatus"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/applicantsname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zia Anjum"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_setstatus" />
+    <TextView
+        android:id="@+id/applicantsexp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:layout_marginTop="32dp"
+        android:text="2 - 3 Years"
+        app:layout_constraintEnd_toEndOf="@+id/applicantsname"
+        app:layout_constraintStart_toStartOf="@+id/applicantsname"
+        app:layout_constraintTop_toBottomOf="@+id/applicantsname" />
+
+
+    <TextView
+        android:id="@+id/applicants_expectedSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Rs:80,000 - 90,000"
+        android:textColor="@color/gray"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/applicantsexp"
+        app:layout_constraintStart_toStartOf="@+id/applicantsexp"
+        app:layout_constraintTop_toBottomOf="@+id/applicantsexp" />
+
+    <Spinner
+        android:id="@+id/setstatusSpinner"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/applicants_expectedSalary"
+        app:layout_constraintStart_toStartOf="@+id/applicants_expectedSalary"
+        app:layout_constraintTop_toBottomOf="@+id/applicants_expectedSalary" />
+
+    <Button
+        android:id="@+id/finalStatus_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/setStatus"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/applicants_expectedSalary"
+        app:layout_constraintStart_toStartOf="@+id/applicants_expectedSalary"
+        app:layout_constraintTop_toBottomOf="@+id/setstatusSpinner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/jobsearchCardView"
+        android:elevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/parent_layoutjsr"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titejobsearch"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/company"
+                android:paddingTop="2dp"
+                android:textSize="20sp"
+                android:textColor="@color/gray"
+                android:text="@string/company_name"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/titejobsearch"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/cityjobsearch"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/company"
+                android:paddingTop="2dp"
+                android:text="Islamabad"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/jobsearchdate"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cityjobsearch"
+                android:paddingTop="2dp"
+                android:textSize="18sp"
+                android:text="date" />
+            <TextView
+                android:id="@+id/qualification"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobsearchdate"
+                android:paddingTop="2dp"
+                android:text="Islamabad"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/university"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qualification"
+                android:paddingTop="2dp"
+                android:textSize="18sp"
+                android:text="date" />
+            <TextView
+                android:id="@+id/cgradepoint"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/university"
+                android:paddingTop="2dp"
+                android:text="Islamabad"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/jobsearchsalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:background="@drawable/bg"
+                android:textSize="18sp"
+                android:text="Rs70,000 - 80,000"
+                android:layout_below="@+id/cgradepoint"/>
+            <TextView
+                android:id="@+id/expired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_alignBottom="@+id/cgradepoint"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="15dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nojob_tv"
+        android:padding="10dp"
+        android:text="No Job Found"
+        android:textStyle="bold"
+        android:background="@drawable/bg"
+        android:textColor="@color/black"
+        android:layout_margin="100dp"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/ok_finish_it"
+        android:text="OK"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:textColor="#0B84E4"
+        android:padding="10dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="160dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.cardview.widget.CardView>

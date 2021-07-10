@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="setstatus">
+        <item>Select Status</item>
+        <item>In Review</item>
+        <item>Interview</item>
+        <item>Offered</item>
+        <item>Hired</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <string-array name="career_level">
+        <item>Select Career Level</item>
+        <item>Intern/Student</item>
+        <item>Entry Level</item>
+        <item>Experienced Professional</item>
+        <item>Deparment Head</item>
+        <item>CEO</item>
+    </string-array>
+
+    <string-array name="job_type">
+        <item>Select Job Type</item>
+        <item>Part Time</item>
+        <item>Full Time</item>
+    </string-array>
+
+    <string-array name="experience">
+        <item>Work Experience</item>
+        <item>Fresh - 1 Year</item>
+        <item>1 Year - 2 Years</item>
+        <item>2 Years - 3 Years</item>
+        <item>3 Years - 4 Years</item>
+        <item>4 Years - 5 Years</item>
+        <item>5 Years - 6 Years</item>
+        <item>6+ Years</item>
+    </string-array>
+
+    <string-array name="gender_array_forJob">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>No Preference</item>
+    </string-array>
+
+    <string-array name="education">
+        <item>Minimum Qualification</item>
+        <item>Matriculation/O-Level</item>
+        <item>Intermediate/A-Level</item>
+        <item>Bachelors</item>
+        <item>Masters</item>
+        <item>MPhil/MS</item>
+        <item>PHD/Doctorate</item>
+        <item>Certification</item>
+        <item>Diploma</item>
+    </string-array>
+
+    <string-array name="jseducation">
+        <item>Qualification</item>
+        <item>Matriculation/O-Level</item>
+        <item>Intermediate/A-Level</item>
+        <item>Bachelors</item>
+        <item>Masters</item>
+        <item>MPhil/MS</item>
+        <item>PHD/Doctorate</item>
+        <item>Certification</item>
+        <item>Diploma</item>
+    </string-array>
+
+    <string-array name="expsalary">
+        <item>Expected Salary</item>
+        <item>Rs20,000 - 30,000</item>
+        <item>Rs30,000 - 40,000</item>
+        <item>Rs40,000 - 50,000</item>
+        <item>Rs50,000 - 60,000</item>
+        <item>Rs60,000 - 70,000</item>
+        <item>Rs70,000 - 80,000</item>
+        <item>Rs80,000 - 90,000</item>
+        <item>Rs100,000 - 110,000</item>
+        <item>Rs110,000 - 120,000</item>
+        <item>Rs120,000 - 130,000</item>
+        <item>Rs130,000 - 140,000</item>
+        <item>Rs140,000 - 150,000</item>
+        <item>Rs150,000+</item>
+    </string-array>
+
+    <string-array name="salaryRange">
+        <item>Salary Range</item>
+        <item>Rs20,000 - 30,000</item>
+        <item>Rs30,000 - 40,000</item>
+        <item>Rs40,000 - 50,000</item>
+        <item>Rs50,000 - 60,000</item>
+        <item>Rs60,000 - 70,000</item>
+        <item>Rs70,000 - 80,000</item>
+        <item>Rs80,000 - 90,000</item>
+        <item>Rs100,000 - 110,000</item>
+        <item>Rs110,000 - 120,000</item>
+        <item>Rs120,000 - 130,000</item>
+        <item>Rs130,000 - 140,000</item>
+        <item>Rs140,000 - 150,000</item>
+        <item>Rs150,000+</item>
+    </string-array>
+
+</resources>

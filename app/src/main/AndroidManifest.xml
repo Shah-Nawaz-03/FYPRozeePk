@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.finalyearproject.replicarozeepk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/rozee"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/rozee"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ReplicaRozeepk.new"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".quiz.AttemptQuiz"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".AppliedJobs.StatusDetails"></activity>
+
+        <activity
+            android:name=".quiz.QuizQuestions"
+            android:parentActivityName=".Jobs.PostedJobDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quiz.AddQuiz"
+            android:parentActivityName=".Jobs.PostedJobDetails"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AppliedJobs.SetStatus"
+            android:parentActivityName=".AppliedJobs.Applicants"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppliedJobs.Applicants"
+            android:parentActivityName=".Jobs.PostedJobDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppliedJobs.StatusDetails"
+            android:parentActivityName=".AppliedJobs.AppliedJobStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppliedJobs.AppliedJobStatus"
+            android:parentActivityName=".menu.Jobseekermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Jobs.MatchedJobsDetail"
+            android:parentActivityName=".Jobs.MatchedJobs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Jobs.MatchedJobs"
+            android:parentActivityName=".menu.Jobseekermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.EmployerProfile"
+            android:parentActivityName=".menu.Employermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Jobs.JobSearchResult"
+            android:parentActivityName=".Jobs.SearchJobs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Jobs.SearchJobs"
+            android:parentActivityName=".menu.Jobseekermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Jobs.PostedJobs"
+            android:parentActivityName=".menu.Employermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Jobs.PostedJobDetails"
+            android:parentActivityName=".Jobs.PostedJobs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Jobs.Jobs"
+            android:parentActivityName=".menu.Employermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Jobs.PostaJob"
+            android:parentActivityName=".menu.Employermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.JobseekerProfile"
+            android:parentActivityName=".menu.Jobseekermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.Employermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu.Jobseekermenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.JobSeekerSignupActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EmployerSignupActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

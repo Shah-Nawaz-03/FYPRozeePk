@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jobs.MatchedJobsDetail">
+
+
+    <include
+        android:id="@+id/toolbar_detailsmj"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_detailsmj">
+
+        <ImageView
+            android:id="@+id/jd_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_company"/>
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:id="@+id/inner"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/job_title_mj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="IOS Developer"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/company_mj"
+                android:text="Scaler"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/city_mj"
+                android:text="Muzaffarabad"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/publish_date"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/green"
+        android:text="@string/published"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main" />
+
+    <TextView
+        android:id="@+id/applyBy"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@color/green"
+        android:text="@string/applyby"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/publish_date"
+        app:layout_constraintTop_toBottomOf="@+id/main" />
+
+    <TextView
+        android:id="@+id/publish_date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="5dp"
+        android:text="2021-06-18"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publish_date" />
+
+    <TextView
+        android:id="@+id/applyBy_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:text="2021-07-18"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/applyBy" />
+
+    <TextView
+        android:id="@+id/jobType_mj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Job Type"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publish_date_view" />
+
+    <TextView
+        android:id="@+id/exp_mj"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Experience"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/jobType_mj"
+        app:layout_constraintTop_toBottomOf="@+id/jobType_mj" />
+
+    <TextView
+        android:id="@+id/gender_mj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:text="Gender"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/cLevel"
+        app:layout_constraintTop_toBottomOf="@+id/cLevel" />
+
+    <TextView
+        android:id="@+id/salary_mj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salary"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/gender_mj"
+        app:layout_constraintTop_toBottomOf="@+id/gender_mj" />
+
+    <TextView
+        android:id="@+id/edu_mj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Education"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/salary_mj"
+        app:layout_constraintTop_toBottomOf="@+id/salary_mj" />
+
+    <TextView
+        android:id="@+id/skill_mj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/skills"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/edu_mj"
+        app:layout_constraintTop_toBottomOf="@+id/edu_mj" />
+
+    <TextView
+        android:id="@+id/jobDes_mj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Job Description"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/skill_mj"
+        app:layout_constraintTop_toBottomOf="@+id/skill_mj" />
+
+    <TextView
+        android:id="@+id/jb_mj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="Full Time"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/jobType_mj"
+        app:layout_constraintTop_toTopOf="@+id/jobType_mj" />
+
+    <TextView
+        android:id="@+id/exp_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="4 - 5 Years"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/jb_mj"
+        app:layout_constraintTop_toBottomOf="@+id/jb_mj" />
+
+    <TextView
+        android:id="@+id/car_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Experienced Professional"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/exp_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/exp_dummy" />
+
+    <TextView
+        android:id="@+id/gen_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="No Preference"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/car_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/car_dummy" />
+
+    <TextView
+        android:id="@+id/sal_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rs60,000 - 70,000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/gen_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/gen_dummy" />
+
+    <TextView
+        android:id="@+id/cLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Career Level"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/exp_mj"
+        app:layout_constraintTop_toBottomOf="@+id/exp_mj" />
+
+    <TextView
+        android:id="@+id/edu_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Bachelors"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/sal_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/sal_dummy" />
+
+    <TextView
+        android:id="@+id/skill_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Swift"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/edu_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/edu_dummy" />
+
+    <EditText
+        android:id="@+id/description_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Candidate should have strong concepts of OOP"
+        app:layout_constraintStart_toStartOf="@+id/skill_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/skill_dummy" />
+
+    <Button
+        android:id="@+id/apply_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

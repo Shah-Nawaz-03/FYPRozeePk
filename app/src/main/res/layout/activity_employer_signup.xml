@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EmployerSignupActivity">
+
+    <include
+        android:id="@+id/toolbar_employerSignUp"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_employerSignUp"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activity.EmployerSignupActivity">
+
+            <EditText
+                android:id="@+id/cname_edttxt_emp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:hint="@string/company_name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/email_edttxt_emp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="@+id/cname_edttxt_emp"
+                app:layout_constraintStart_toStartOf="@+id/cname_edttxt_emp"
+                app:layout_constraintTop_toBottomOf="@+id/cname_edttxt_emp" />
+
+            <EditText
+                android:id="@+id/password_emp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/email_edttxt_emp"
+                app:layout_constraintStart_toStartOf="@+id/email_edttxt_emp"
+                app:layout_constraintTop_toBottomOf="@+id/email_edttxt_emp" />
+
+
+            <EditText
+                android:id="@+id/confirmPassword_emp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/Confirm"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/password_emp"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="@+id/password_emp"
+                app:layout_constraintTop_toBottomOf="@+id/password_emp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_city_emp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/confirmPassword_emp"
+                app:layout_constraintStart_toStartOf="@+id/confirmPassword_emp"
+                app:layout_constraintTop_toBottomOf="@+id/confirmPassword_emp" />
+
+            <Button
+                android:id="@+id/button_uploadimage_emp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/upload_image"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/spinner_city_emp"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_city_emp" />
+
+            <Button
+                android:id="@+id/signUp_btn_emp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/create"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_city_emp"
+                app:layout_constraintStart_toStartOf="@+id/spinner_city_emp"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_city_emp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

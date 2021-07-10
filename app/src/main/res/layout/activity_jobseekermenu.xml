@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.Jobseekermenu">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar_js_menu"/>
+
+
+
+    <Button
+                android:id="@+id/menuprofilebtn"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="218dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/profile"
+                android:textAlignment="center"
+                app:icon="@drawable/profileicon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/searchbtn_jsmenu"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/search"
+                app:icon="@drawable/search"
+                app:layout_constraintEnd_toEndOf="@+id/menuprofilebtn"
+                app:layout_constraintStart_toStartOf="@+id/menuprofilebtn"
+                app:layout_constraintTop_toBottomOf="@+id/menuprofilebtn" />
+
+            <Button
+                android:id="@+id/appliedjobbtn_jsmenu"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/applied_jobs"
+                app:icon="@drawable/job"
+                app:layout_constraintEnd_toEndOf="@+id/searchbtn_jsmenu"
+                app:layout_constraintStart_toStartOf="@+id/searchbtn_jsmenu"
+                app:layout_constraintTop_toBottomOf="@+id/searchbtn_jsmenu" />
+
+            <Button
+                android:id="@+id/matchjobbtn_jsmenu"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/view_matched_jobs"
+                app:icon="@drawable/job"
+                app:layout_constraintEnd_toEndOf="@+id/appliedjobbtn_jsmenu"
+                app:layout_constraintStart_toStartOf="@+id/appliedjobbtn_jsmenu"
+                app:layout_constraintTop_toBottomOf="@+id/appliedjobbtn_jsmenu" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

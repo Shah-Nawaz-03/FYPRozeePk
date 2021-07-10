@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/exit_tv"
+        android:text="@string/exitsmall"
+        android:textSize="24sp"
+        android:layout_margin="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/areusure_tv"
+        android:textSize="20sp"
+        android:text="@string/areusure"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/cancel_view"
+        android:text="@string/cancelcpital"
+        android:textColor="#0B84E4"
+        android:textSize="18sp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/exit_view"
+        android:text="@string/exit"
+        android:textSize="18sp"
+        android:layout_marginBottom="18dp"
+        android:textColor="#0B84E4"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="210dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.cardview.widget.CardView>

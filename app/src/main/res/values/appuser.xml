@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="appusertype">
+        <item>Sign in as </item>
+        <item>Job Seeker</item>
+        <item>Employer</item>
+    </string-array>
+</resources>

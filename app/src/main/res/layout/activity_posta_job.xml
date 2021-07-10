@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jobs.PostaJob">
+
+    <include
+        android:id="@+id/toolbar_PostJobs"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_PostJobs">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/InnerConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Jobs.PostaJob">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/JobTitle_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:completionThreshold="1"
+                android:hint="@string/job_title"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/skills_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:completionThreshold="1"
+                android:hint="@string/skills"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/JobTitle_et"
+                app:layout_constraintStart_toStartOf="@+id/JobTitle_et"
+                app:layout_constraintTop_toBottomOf="@+id/JobTitle_et" />
+
+            <Spinner
+                android:id="@+id/CreerLevel_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/skills_et"
+                app:layout_constraintStart_toStartOf="@+id/skills_et"
+                app:layout_constraintTop_toBottomOf="@+id/skills_et" />
+
+            <Spinner
+                android:id="@+id/Salary_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/CreerLevel_et"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="@+id/CreerLevel_et"
+                app:layout_constraintTop_toBottomOf="@+id/CreerLevel_et" />
+
+            <Spinner
+                android:id="@+id/Experience_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/Salary_et"
+                app:layout_constraintStart_toStartOf="@+id/Salary_et"
+                app:layout_constraintTop_toBottomOf="@+id/Salary_et" />
+
+            <Spinner
+                android:id="@+id/Education_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/Experience_et"
+                app:layout_constraintStart_toStartOf="@+id/Experience_et"
+                app:layout_constraintTop_toBottomOf="@+id/Experience_et" />
+
+            <Spinner
+                android:id="@+id/uni_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/Education_et"
+                app:layout_constraintStart_toStartOf="@+id/Education_et"
+                app:layout_constraintTop_toBottomOf="@+id/Education_et" />
+            <Spinner
+                android:id="@+id/cgpa_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/uni_et"
+                app:layout_constraintStart_toStartOf="@+id/uni_et"
+                app:layout_constraintTop_toBottomOf="@+id/uni_et" />
+
+            <Spinner
+                android:id="@+id/spinner_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/cgpa_et"
+                app:layout_constraintStart_toStartOf="@+id/cgpa_et"
+                app:layout_constraintTop_toBottomOf="@+id/cgpa_et" />
+
+            <Spinner
+                android:id="@+id/spinner_jobType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_gender"
+                app:layout_constraintStart_toStartOf="@+id/spinner_gender"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_gender" />
+
+
+            <EditText
+                android:id="@+id/Description_met"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Job Description"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_jobType"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="@+id/spinner_jobType"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_jobType" />
+
+            <Button
+                android:id="@+id/button_postJob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/postthisjob"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/Description_met"
+                app:layout_constraintStart_toStartOf="@+id/Description_met"
+                app:layout_constraintTop_toBottomOf="@+id/Description_met" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

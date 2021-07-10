@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jobs.PostedJobDetails">
+
+    <include
+        android:id="@+id/toolbar_PostJob_detail"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jobtite_tvjd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:text="@string/Jtwithcolon"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_PostJob_detail" />
+
+    <TextView
+        android:id="@+id/skill_tvjd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/skillwcolon"
+        app:layout_constraintEnd_toEndOf="@+id/jobtite_tvjd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobtite_tvjd" />
+
+    <TextView
+        android:id="@+id/salary_tvjd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="32dp"
+        android:text="@string/salarywcolon"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skill_tvjd" />
+
+    <TextView
+        android:id="@+id/date_tvjd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:text="@string/datewcolon"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salary_tvjd" />
+
+    <TextView
+        android:id="@+id/job_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
+        android:text="IOS Developer"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/jobtite_tvjd"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_PostJob_detail" />
+
+    <TextView
+        android:id="@+id/sk_ills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Swift"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/job_title"
+        app:layout_constraintTop_toBottomOf="@+id/job_title" />
+
+    <TextView
+        android:id="@+id/sal_ary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Rs:50,000 - 60,000"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/sk_ills"
+        app:layout_constraintTop_toBottomOf="@+id/sk_ills" />
+
+    <TextView
+        android:id="@+id/da_te"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="jun 23, 2021"
+        android:textSize="18sp"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/sal_ary"
+        app:layout_constraintTop_toBottomOf="@+id/sal_ary" />
+
+    <Button
+        android:id="@+id/applicants_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Applicants"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="460dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_PostJob_detail" />
+
+
+    <Button
+        android:id="@+id/add_quiz_btn"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/addquiz"
+        app:layout_constraintEnd_toEndOf="@id/applicants_btn"
+        app:layout_constraintStart_toStartOf="@id/applicants_btn"
+        app:layout_constraintTop_toBottomOf="@+id/applicants_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
